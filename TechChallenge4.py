@@ -20,10 +20,15 @@ pages = {
 # Inicializa a variável para a página atual
 current_page = None
 
-# Criar botões para as páginas
-for page_name in pages.keys():
-    if st.button(page_name):  # Cria um botão para cada página
-        current_page = page_name  # Define a página atual como a página do botão clicado
+# Cria colunas para os botões
+col_count = len(pages)
+cols = st.columns(col_count)
+
+# Criar botões em colunas
+for i, page_name in enumerate(pages.keys()):
+    with cols[i]:
+        if st.button(page_name):  # Cria um botão para cada página
+            current_page = page_name  # Define a página atual como a página do botão clicado
 
 # Carregar a página selecionada
 if current_page:
