@@ -1,6 +1,9 @@
 import streamlit as st
-from Pages.Home import app as home_app
-from Pages.About import app as about_app
+from Pages.Introdução import app as Introdução_app
+from Pages.Metodologia import app as Metodologia_app
+from Pages.Análise import app as Análise_app
+from Pages.Previsão import app as Previsão_app
+from Pages.Referências import app as Referências_app
 
 st.title('Tech Challenge 4 | Fiapp')
 
@@ -10,7 +13,7 @@ pages = {
     "Metodologia": Metodologia_app,
     "Análise": Análise_app,
     "Previsão": Previsão_app,
-    "Referências": Referências_app,
+    "Referências": Referências_app
 }
 
 # Menu lateral de navegação
