@@ -2,5 +2,5 @@
 import streamlit as st
 
 def app():
-    st.title("Metodologias utilizadas")
-    st.write("Bem-vindo à página inicial do app!")
+    st.title("Metodologia")
+    st.write("Nesta página explicaremos sobre a metodologia escolhida.")
