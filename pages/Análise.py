@@ -3,4 +3,4 @@ import streamlit as st
 
 def app():
     st.title("Análise da base")
-    st.write("Bem-vindo à página inicial do app!")
+    st.write("Após as aplicações de metodologias pudemos verificar que.")
