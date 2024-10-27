@@ -5,6 +5,7 @@ from pages.Análise import app as Análise_app
 from pages.Previsão import app as Previsão_app
 from pages.Referências import app as Referências_app
 
+
 st.title('Tech Challenge 4 | Fiapp')
 
 # Dicionário com as páginas
@@ -30,5 +31,5 @@ for page_name in pages.keys():
         select_page(page_name)
 
 # Carregar a página selecionada
-pages = pages[st.session_state.selected_page]
-pages.app()
+page = pages[selection]  # Aqui, 'page' é a função app importada
+page()  # Chame a função diretamente, sem '.app'
