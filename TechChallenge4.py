@@ -30,6 +30,9 @@ for page_name in pages.keys():
     if st.button(page_name):
         select_page(page_name)
 
+# Menu de navegação na parte principal
+selection = st.radio("Ir para", list(pages.keys()))  # Aqui, a variável é definida
+
 # Carregar a página selecionada
-page = pages[selection]  # Aqui, 'page' é a função app importada
-page()  # Chame a função diretamente, sem '.app'
+page = pages[selection]  # 'page' é a função correspondente
+page()  # Chame a função diretamente
