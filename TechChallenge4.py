@@ -16,6 +16,3 @@ pages = {
     "Referências": Referências_app
 }
 
-# Carregar a página selecionada
-page = pages[selection]
-page()
