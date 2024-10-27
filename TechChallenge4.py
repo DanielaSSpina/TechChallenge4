@@ -20,3 +20,7 @@ pages = {
 st.sidebar.title("Menu")
 selection = st.sidebar.radio("Ir para", list(pages.keys()))
 
+# Carregar a página selecionada
+page = pages[selection]
+page()
+
