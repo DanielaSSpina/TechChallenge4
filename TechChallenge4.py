@@ -16,7 +16,7 @@ pages = {
     "Referências": Referências_app
 }
 
-# Menu de navegação
+# Menu de navegação na barra lateral
 st.sidebar.title("Menu")
 selection = st.sidebar.radio("Ir para", list(pages.keys()))
 
