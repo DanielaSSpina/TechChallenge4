@@ -16,11 +16,10 @@ pages = {
     "Referências": Referências_app
 }
 
-# Menu de navegação na barra lateral
+# Menu de navegação
 st.sidebar.title("Menu")
 selection = st.sidebar.radio("Ir para", list(pages.keys()))
 
 # Carregar a página selecionada
 page = pages[selection]
-page()
-
+page.app()  # Chame a função app de cada página
