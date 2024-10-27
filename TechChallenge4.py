@@ -30,5 +30,5 @@ for page_name in pages.keys():
         select_page(page_name)
 
 # Carregar a página selecionada
-page = pages[st.session_state.selected_page]
+pages = pages[st.session_state.selected_page]
 page.app()
