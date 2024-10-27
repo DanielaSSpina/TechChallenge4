@@ -16,10 +16,19 @@ pages = {
     "Referências": Referências_app
 }
 
-# Menu de navegação
-st.sidebar.title("Menu")
-selection = st.sidebar.radio("Ir para", list(pages.keys()))
+# Gerenciar o estado da página selecionada
+if 'selected_page' not in st.session_state:
+    st.session_state.selected_page = 'Introdução'  # Página inicial
+
+# Funções para selecionar a página
+def select_page(page_name):
+    st.session_state.selected_page = page_name
+
+# Criar botões para as páginas
+for page_name in pages.keys():
+    if st.button(page_name):
+        select_page(page_name)
 
 # Carregar a página selecionada
-page = pages[selection]
-page.app()  # Chame a função app de cada página
+page = pages[st.session_state.selected_page]
+page.app()
