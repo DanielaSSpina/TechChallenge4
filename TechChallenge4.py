@@ -5,7 +5,7 @@ from pages.Análise import app as Análise_app
 from pages.Previsão import app as Previsão_app
 from pages.Referências import app as Referências_app
 
-
+# Título da aplicação
 st.title('Tech Challenge 4 | Fiapp')
 
 # Dicionário com as páginas
@@ -17,22 +17,18 @@ pages = {
     "Referências": Referências_app
 }
 
-# Gerenciar o estado da página selecionada
-if 'selected_page' not in st.session_state:
-    st.session_state.selected_page = 'Introdução'  # Página inicial
-
-# Funções para selecionar a página
-def select_page(page_name):
-    st.session_state.selected_page = page_name
+# Inicializa a variável para a página atual
+current_page = None
 
 # Criar botões para as páginas
 for page_name in pages.keys():
-    if st.button(page_name):
-        select_page(page_name)
-
-# Menu de navegação na parte principal
-selection = st.radio("Ir para", list(pages.keys()))  # Aqui, a variável é definida
+    if st.button(page_name):  # Cria um botão para cada página
+        current_page = page_name  # Define a página atual como a página do botão clicado
 
 # Carregar a página selecionada
-page = pages[selection]  # 'page' é a função correspondente
-page()  # Chame a função diretamente
+if current_page:
+    page = pages[current_page]
+    page()  # Chama a função 'app()' da página selecionada
+else:
+    # Carrega uma página padrão se nenhum botão for clicado
+    st.write("Por favor, selecione uma página.")
