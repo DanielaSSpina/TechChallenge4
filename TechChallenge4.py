@@ -16,9 +16,6 @@ pages = {
     "Referências": Referências_app
 }
 
-# Menu lateral de navegação
-st.sidebar.title("Menu")
-
 # Carregar a página selecionada
 page = pages[selection]
 page()
