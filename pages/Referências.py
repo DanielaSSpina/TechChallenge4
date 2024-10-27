@@ -2,5 +2,5 @@
 import streamlit as st
 
 def app():
-    st.title("Referências utilizadas")
-    st.write("Bem-vindo à página inicial do app!")
+    st.title("Referêcias")
+    st.write("Sites que utilizamos.")
