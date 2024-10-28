@@ -26,12 +26,12 @@ cols = st.columns(col_count)
 # Criar botões para as páginas
 for i, page_name in enumerate(pages.keys()):
     with cols[i]:
-        if st.button(page_name):  # Cria um botão para cada página
-            current_page = page_name  # Define a página atual como a página do botão clicado
+        if st.button(page_name):
+            current_page = page_name  # Define a página atual
 
 # Carregar a página selecionada
 if current_page:
     page = pages[current_page]
-    page.app()  # Chama a função 'app()' da página selecionada
+    page()  # Chama a função 'app()' da página selecionada
 else:
     st.write("Por favor, selecione uma página.")
