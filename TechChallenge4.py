@@ -10,11 +10,11 @@ st.title('Tech Challenge 4 | Fiapp')
 
 # Dicionário com as páginas
 pages = {
-    "Introdução": Introdução_app,
-    "Metodologia": Metodologia_app,
-    "Análise": Análise_app,
-    "Previsão": Previsão_app,
-    "Referências": Referências_app
+    "Introdução.py": Introdução_app,
+    "Metodologia.py": Metodologia_app,
+    "Análise.py": Análise_app,
+    "Previsão.py": Previsão_app,
+    "Referências.py": Referências_app
 }
 
 # Inicializa a variável para a página atual
