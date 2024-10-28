@@ -6,7 +6,7 @@ from pages.Previsão import app as Previsão_app
 from pages.Referências import app as Referências_app
 
 st.title('Tech Challenge 4 | Fiapp')
-st.subheader('teste)
+st.subheader('teste')
 
 # Dicionário com as páginas
 pages = {
