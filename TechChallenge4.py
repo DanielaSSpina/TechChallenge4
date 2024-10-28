@@ -1,20 +1,20 @@
 import streamlit as st
-from pages.Introdução import app as Introdução_app
-from pages.Metodologia import app as Metodologia_app
-from pages.Análise import app as Análise_app
-from pages.Previsão import app as Previsão_app
-from pages.Referências import app as Referências_app
+from pages.Introdução.py import app as Introdução_app
+from pages.Metodologia.py import app as Metodologia_app
+from pages.Análise.py import app as Análise_app
+from pages.Previsão.py import app as Previsão_app
+from pages.Referências.py import app as Referências_app
 
 # Título da aplicação
 st.title('Tech Challenge 4 | Fiapp')
 
 # Dicionário com as páginas
 pages = {
-    "Introdução.py": Introdução_app,
-    "Metodologia.py": Metodologia_app,
-    "Análise.py": Análise_app,
-    "Previsão.py": Previsão_app,
-    "Referências.py": Referências_app
+    "Introdução": Introdução_app,
+    "Metodologia": Metodologia_app,
+    "Análise": Análise_app,
+    "Previsão": Previsão_app,
+    "Referências": Referências_app
 }
 
 # Inicializa a variável para a página atual
