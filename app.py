@@ -25,7 +25,7 @@ st.image('Imagens/Phyton/Python - Crise econômica de 2008.png', caption='Crise 
 
 st.subheader('Impacto acordo da OPEP:')
 st.write('Explicar o que foi o acordo da OPEP')
-st.imagem('Imagens/Phyton/Python - Impacto acordo da OPEP.png', caption='Imapacto acordo da OPEP - 2016')
+st.image('Imagens/Phyton/Python - Impacto acordo da OPEP.png', caption='Imapacto acordo da OPEP - 2016')
 
 st.subheader('Tensões geopolíticas do oriente médio:')
 st.write('Explicar o que é a tensão geopolítica no oriente médio')
