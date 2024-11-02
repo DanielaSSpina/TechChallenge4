@@ -17,7 +17,23 @@ st.subheader('Origem e análise dos dados')
 st.write('Os dados utilizados nesta análise foram extraídos do site do Instituto de Pesquisa Econômica Aplicada (Ipea). Após a extração, os dados foram salvos em um arquivo csv, e importados no python para tratamentos iniciais mostrados abaixo:')
 st. image ('Imagens/Phyton/Pyhton - importanto bibliotecas.png', caption='importando e instalando bibliotecasnecessárias')
 st.image('Imagens/Phyton/Pyhton - tratamento dos dados.png', caption='importação da base de dados e tratamento inicial')
-st.image('Imagens/Phyton/Pyhton - tratamento dos dados.png', caption='importação da base de dados e tratamento inicial')
+st.write('Após os tratamentos foi possível realizar a visualização gráfica dos seguintes acontecimentos:')
+
+st.subheader('Crise econômica de 2008:')
+st.write('Explicar o que foi a crise econômica')
+st.image('Imagens/Phyton/Python - Crise econômica de 2008.png', caption='Crise econômica de 2008')
+
+st.subheader('Impacto acordo da OPEP:')
+st.write('Explicar o que foi o acordo da OPEP')
+st.imagem('Imagens/Phyton/Python - Impacto acordo da OPEP.png', caption='Imapacto acordo da OPEP - 2016')
+
+st.subheader('Tensões geopolíticas do oriente médio:')
+st.write('Explicar o que é a tensão geopolítica no oriente médio')
+st.image('Imagens/Phyton/Python - Tensão geopolíticas do oriente méido.png', caption='Tensão geopolítica do oriente médio - 2020')
+
+st.subheader('Pandemia covid-19:')
+st.write('Explicar o que foi a pandemia')
+st.image('Imagens/Phyton/Python - Impacto da pandemia.png', caption='Pandemia Covid19 2020 - 2021')
 
 
 st.subheader('Análise e visualizações de Dados e Insights')
