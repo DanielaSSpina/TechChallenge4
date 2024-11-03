@@ -15,11 +15,19 @@ Streamlit: utilizado para desenvolvimento do MVP (Minimum Viable Product, ou Pro
 st.markdown("<h3 style='color:#264CAC;'>Metodologia</h3>", unsafe_allow_html=True)
 st.markdown("<h3 style='color:#6C778A;'>Origem e análise dos dados</h3>", unsafe_allow_html=True)
 st.write('Os dados utilizados nesta análise foram extraídos do site do Instituto de Pesquisa Econômica Aplicada (Ipea). Após a extração, os dados foram salvos em um arquivo csv, e importados no python para tratamentos iniciais mostrados abaixo:')
-st. image ('Imagens/Phyton/Pyhton - importanto bibliotecas.png', caption='importando e instalando bibliotecasnecessárias')
+st. image ('Imagens/Phyton/Pyhton - importanto bibliotecas.png', caption='importando e instalando bibliotecas necessárias')
 st.image('Imagens/Phyton/Pyhton - tratamento dos dados.png', caption='importação da base de dados e tratamento inicial')
 
 st.markdown("<h3 style='color:#6C778A;'>Modelo de Machine Learning</h3>", unsafe_allow_html=True)
-
+st.write('Para realizar o machine learning dos nossos dados, utilizamos o modelo Prophet, pois é uma ferramenta que se destaca em cenários onde previsões de longo prazo e ajustes a tendências e sazonalidades complexas são necessários.')
+st. image ('Imagens/Phyton/Python - preparação dados previsão.png', caption='preparando os dados para o Prophet')
+st. image ('Imagens/Phyton/Python - preparação dados previsão 2.png', caption='visualizando datas e df')
+st. image ('Imagens/Phyton/Python - preparação dados previsão 3.png', caption='ajustando dados data e criando index')
+st. image ('Imagens/Phyton/Python - preparação dados previsão 4.png', caption='iniciando a previsão dos dados')
+st. image ('Imagens/Phyton/Python - Plot Prophet.png', caption='gráficos plotados de tendência e sazonalidade')
+st. image ('Imagens/Phyton/Python - Forecast.png', caption='criação do forecast')
+st. image ('Imagens/Phyton/Python - criando arquivo de previsão.png', caption='criando arquivo de previsão')
+st. image ('Imagens/Phyton/Python - acurácia dados previsão.png', caption='validando acurácia do modelo')
 
 st.markdown("<h3 style='color:#264CAC;'>Acontecimentos que influenciaram o preço do petróleo</h3>", unsafe_allow_html=True)
 st.markdown("<h3 style='color:#6C778A;'>Crise econômica de 2008:</h3>", unsafe_allow_html=True)
@@ -59,18 +67,24 @@ Em abril de 2020, o preço do petróleo alcançou um marco histórico com o petr
 st.image('Imagens/Phyton/Python - Impacto da pandemia.png', caption='Pandemia Covid19 2020 - 2021')
 
 
-st.subheader('Criação de Dashboard interativo')
+st.markdown("<h3 style='color:#264CAC;'>Criação de Dashboard interativo</h3>", unsafe_allow_html=True)
+
+st.markdown("<h3 style='color:#264CAC;'>MVP</h3>", unsafe_allow_html=True)
+
+st.markdown("<h3 style='color:#264CAC;'>Conclusão</h3>", unsafe_allow_html=True)
 
 
-st.subheader('Conclusão')
 
-st.title('Referências')
-st.write('''Crise financeira 2008: https://www.investopedia.com/ask/answers/052715/how-did-financial-crisis-affect-oil-and-gas-sector.asp
-Crise financeira 2008: https://cepr.org/voxeu/columns/oil-prices-and-economic-recession-2007-08
-Crise financeira 2008: https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp
-Informações OPEP: https://www.ecb.europa.eu/pub/pdf/other/eb201608_focus01.en.pdf
-Informações OPEP: https://www.opec.org/opec_web/en/press_room/6748.htm
-Informações OPEP: https://oglobo.globo.com/economia/noticia/2023/11/30/o-que-e-a-opep-como-ela-funciona-e-o-que-o-brasil-tem-a-ganhar-caso-se-torne-um-membro.ghtml
-Tensões geopolíticas do oriente médio: https://www.wilsoncenter.org/article/explainer-roots-and-realities-10-conflicts-middle-east
+st.markdown("<h3 style='color:#264CAC;'>Referências</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color:#6C778A;'>Crise financeira 2008</h3>", unsafe_allow_html=True)
+st.write('''https://www.investopedia.com/ask/answers/052715/how-did-financial-crisis-affect-oil-and-gas-sector.asp
+https://cepr.org/voxeu/columns/oil-prices-and-economic-recession-2007-08
+https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp''')
+st.markdown("<h3 style='color:#6C778A;'>Informações OPEP</h3>", unsafe_allow_html=True)
+st.write('''https://www.ecb.europa.eu/pub/pdf/other/eb201608_focus01.en.pdf
+https://www.opec.org/opec_web/en/press_room/6748.htm
+https://oglobo.globo.com/economia/noticia/2023/11/30/o-que-e-a-opep-como-ela-funciona-e-o-que-o-brasil-tem-a-ganhar-caso-se-torne-um-membro.ghtml''')
+st.markdown("<h3 style='color:#6C778A;'>Tensões geopolíticas do oriente médio</h3>", unsafe_allow_html=True)
+st.write('''https://www.wilsoncenter.org/article/explainer-roots-and-realities-10-conflicts-middle-east
 Tensões geopolíticas do oriente médio: https://www.iemed.org/publication/geopolitical-trends-shifts-challenges-and-fractures-of-the-post-arab-spring-2020-2021/
 Tensões geopolíticas do oriente médio: https://www.brookings.edu/articles/the-middle-east-and-north-africa-over-the-next-decade-key-challenges-and-policy-options/''')
