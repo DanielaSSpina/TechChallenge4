@@ -1,13 +1,12 @@
 import streamlit as st
 
-st.markdown("<h3 style='color:#000080;'>Tech Challenge 4 | Fiap</h3>", unsafe_allow_html=True)
-st.title('color:#0E2494[Tech Challenge 4 | Fiap]')
+st.markdown("<h3 style='color:#1C47D2;'>Tech Challenge 4 | Fiap</h3>", unsafe_allow_html=True)
 st.subheader('Introdução')
 
 st.write('''Este trabalho tem como foco apresentar a análise do preço do petróleo brent, trazendo quatro acontecimentos que auxiliem a explicação das variação do preço e podem variar desde fatores geopolíticos até avanços tecnológicos. 
 Traremos além dos acontecimentos, uma análise por meio de um dashboard dinâmico dos dados, previsão analisada e MVP.''')
 
-st.title('Ferramentas utilizadas')
+st.markdown("<h3 style='color:#1C47D2;'>Ferramentas utilizadas</h3>", unsafe_allow_html=True)
 st.write(''''Para a realização deste trabalho, foi utilizado as seguintes ferramentas:
 Python: utilizado para toda a tratativa inicial das bases como organização das colunas, remoção de espaços e duplicidades e valores nulo, assim como para a realização da previsão dos preços do petróleo por meio do modelo de machine learning PROPHET.
 PowerBI: utilizado para a criação de um dashboard interativo compilando as informações disponíveis do preço do petróleo, previsão e acontecimentos que influenciam na explicação da variação do preço.
