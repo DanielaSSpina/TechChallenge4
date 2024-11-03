@@ -64,7 +64,7 @@ st.subheader('Modelo de Machine Learning')
 
 st.subheader('Conclusão')
 
-st.title('Referências)
+st.title('Referências')
 st.write('''Crise financeira 2008: https://www.investopedia.com/ask/answers/052715/how-did-financial-crisis-affect-oil-and-gas-sector.asp
 Crise financeira 2008: https://cepr.org/voxeu/columns/oil-prices-and-economic-recession-2007-08
 Crise financeira 2008: https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp
