@@ -1,7 +1,7 @@
 import streamlit as st
 
-st.markdown("<h3 style='color:#1C47D2;'>Tech Challenge 4 | Fiap</h3>", unsafe_allow_html=True)
-st.markdown("<h3 style='color:#595959;'>Introdução</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color:#007B83;'>Tech Challenge 4 | Fiap</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color:#8A9A9E;'>Introdução</h3>", unsafe_allow_html=True)
 
 st.write('''Este trabalho tem como foco apresentar a análise do preço do petróleo brent, trazendo quatro acontecimentos que auxiliem a explicação das variação do preço e podem variar desde fatores geopolíticos até avanços tecnológicos. 
 Traremos além dos acontecimentos, uma análise por meio de um dashboard dinâmico dos dados, previsão analisada e MVP.''')
@@ -17,8 +17,9 @@ st.markdown("<h3 style='color:#595959;'>Origem e análise dos dados</h3>", unsaf
 st.write('Os dados utilizados nesta análise foram extraídos do site do Instituto de Pesquisa Econômica Aplicada (Ipea). Após a extração, os dados foram salvos em um arquivo csv, e importados no python para tratamentos iniciais mostrados abaixo:')
 st. image ('Imagens/Phyton/Pyhton - importanto bibliotecas.png', caption='importando e instalando bibliotecasnecessárias')
 st.image('Imagens/Phyton/Pyhton - tratamento dos dados.png', caption='importação da base de dados e tratamento inicial')
-st.write('Após os tratamentos foi possível realizar a visualização gráfica dos seguintes acontecimentos:')
+st.write('Após os tratamentos foi possível realizar a visualização gráfica.')
 
+st.subheader('Análise e visualizações de Dados')
 st.markdown("<h3 style='color:#1C47D2;'>Crise econômica de 2008:</h3>", unsafe_allow_html=True)
 st.write('''A crise econômica de é também conhecida como a crise financeira global, foi uma das mais graves desde a Grande Depressão de 1929. Ela teve início nos Estados Unidos e rapidamente se espalhou para o resto do mundo, afetando bancos, mercados financeiros, empresas e, principalmente, a vida de milhões de pessoas.
 Nos anos que antecederam a crise, os preços dos imóveis nos Estados Unidos subiram muito. Essa "bolha imobiliária" foi alimentada por políticas de crédito fácil: os bancos ofereciam empréstimos com juros baixos e condições flexíveis, mesmo para pessoas com pouca capacidade de pagamento (os chamados "subprime"), com todas essas condições muitas pessoas compraram imóveis, levando a uma alta na demanda e, consequentemente, alta no preço das casas.
@@ -56,7 +57,7 @@ Em abril de 2020, o preço do petróleo alcançou um marco histórico com o petr
 st.image('Imagens/Phyton/Python - Impacto da pandemia.png', caption='Pandemia Covid19 2020 - 2021')
 
 
-st.subheader('Análise e visualizações de Dados e Insights')
+st.subheader('Criação de Dashboard interativo')
 
 
 st.subheader('Modelo de Machine Learning')
