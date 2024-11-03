@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title(':navy[Tech Challenge 4 | Fiap]')
+st.title(':Blue[Tech Challenge 4 | Fiap]')
 st.subheader('Introdução')
 
 st.write('''Este trabalho tem como foco apresentar a análise do preço do petróleo brent, trazendo quatro acontecimentos que auxiliem a explicação das variação do preço e podem variar desde fatores geopolíticos até avanços tecnológicos. 
