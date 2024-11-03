@@ -1,7 +1,7 @@
 import streamlit as st
 
-st.markdown("<h3 style='color:#264CAC;'>Tech Challenge 4 | Fiap</h3>", unsafe_allow_html=True)
-st.markdown("<h3 style='color:#6C778A;'>Introdução</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color:#B40C40;'>Tech Challenge 4 | Fiap</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color:#264CAC;'>Introdução</h3>", unsafe_allow_html=True)
 
 st.write('''Este trabalho tem como foco apresentar a análise do preço do petróleo brent, trazendo quatro acontecimentos que auxiliem a explicação das variação do preço e podem variar desde fatores geopolíticos até avanços tecnológicos. 
 Traremos além dos acontecimentos, uma análise por meio de um dashboard dinâmico dos dados, previsão analisada e MVP.''')
