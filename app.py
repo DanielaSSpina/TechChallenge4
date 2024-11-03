@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.markdown("<h3 style='color:#1C47D2;'>Tech Challenge 4 | Fiap</h3>", unsafe_allow_html=True)
-st.subheader('Introdução')
+st.markdown("<h3 style='color:#595959;'>Introdução</h3>", unsafe_allow_html=True)
 
 st.write('''Este trabalho tem como foco apresentar a análise do preço do petróleo brent, trazendo quatro acontecimentos que auxiliem a explicação das variação do preço e podem variar desde fatores geopolíticos até avanços tecnológicos. 
 Traremos além dos acontecimentos, uma análise por meio de um dashboard dinâmico dos dados, previsão analisada e MVP.''')
@@ -12,14 +12,14 @@ Python: utilizado para toda a tratativa inicial das bases como organização das
 PowerBI: utilizado para a criação de um dashboard interativo compilando as informações disponíveis do preço do petróleo, previsão e acontecimentos que influenciam na explicação da variação do preço.
 Streamlit: utilizado para desenvolvimento do MVP (Minimum Viable Product, ou Produto Mínimo Viável) e disponibilização das etapas e informações do projeto. ''''')
 
-st.title('Metodologia')
-st.subheader('Origem e análise dos dados')
+st.markdown("<h3 style='color:#1C47D2;'>Metodologia</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color:#595959;'>Origem e análise dos dados</h3>", unsafe_allow_html=True)
 st.write('Os dados utilizados nesta análise foram extraídos do site do Instituto de Pesquisa Econômica Aplicada (Ipea). Após a extração, os dados foram salvos em um arquivo csv, e importados no python para tratamentos iniciais mostrados abaixo:')
 st. image ('Imagens/Phyton/Pyhton - importanto bibliotecas.png', caption='importando e instalando bibliotecasnecessárias')
 st.image('Imagens/Phyton/Pyhton - tratamento dos dados.png', caption='importação da base de dados e tratamento inicial')
 st.write('Após os tratamentos foi possível realizar a visualização gráfica dos seguintes acontecimentos:')
 
-st.subheader('Crise econômica de 2008:')
+st.markdown("<h3 style='color:#1C47D2;'>Crise econômica de 2008:</h3>", unsafe_allow_html=True)
 st.write('''A crise econômica de é também conhecida como a crise financeira global, foi uma das mais graves desde a Grande Depressão de 1929. Ela teve início nos Estados Unidos e rapidamente se espalhou para o resto do mundo, afetando bancos, mercados financeiros, empresas e, principalmente, a vida de milhões de pessoas.
 Nos anos que antecederam a crise, os preços dos imóveis nos Estados Unidos subiram muito. Essa "bolha imobiliária" foi alimentada por políticas de crédito fácil: os bancos ofereciam empréstimos com juros baixos e condições flexíveis, mesmo para pessoas com pouca capacidade de pagamento (os chamados "subprime"), com todas essas condições muitas pessoas compraram imóveis, levando a uma alta na demanda e, consequentemente, alta no preço das casas.
 Os bancos e instituições financeiras começaram a "empacotar" esses empréstimos de alto risco em títulos e vendê-los no mercado financeiro como investimentos seguros que prometiam retornos elevados e pareciam ser uma maneira segura de investir em imóveis, que tradicionalmente eram vistos como ativos seguros.
@@ -36,20 +36,20 @@ Esse colapso foi impulsionado tanto pela queda da demanda quanto pela diminuiç�
 As dificuldades financeiras das empresas de energia, que enfrentaram problemas de crédito e financiamento, também contribuíram para a instabilidade dos preços. Além disso, a volatilidade no setor de commodities levou a um ajuste no investimento em novas explorações e produção, o que impactou a oferta no médio prazo. Para mais detalhes sobre esse período e suas consequências, você pode conferir artigos do Center for Economic Policy Research e do Brookings Institute, que analisam o efeito da crise no mercado de petróleo e suas implicações econômicas''')
 st.image('Imagens/Phyton/Python - Crise econômica de 2008.png', caption='Crise econômica de 2008')
 
-st.subheader('Impacto do acordo da OPEP:')
+st.markdown("<h3 style='color:#1C47D2;'>Impacto do acordo da OPEP:</h3>", unsafe_allow_html=True)
 st.write('''A OPEP (Organização dos Países Exportadores de Petróleo e Aliados) que foi criada em 1960 inicialmente por 5 países que exportam petróleos e ao longo dos anos outros paises foram convidados a participar.
 Ela foi criada com o objetivo de estabelecer uma política comum em relação à produção e à venda de petróleo, de forma a influenciar os preços do petróleo no mercado internacional. Por serem grandes produtores, seus membros são capazes mexer com as cotações, ao aumentar ou cortar a produção de forma coordenada.
 Em 2016, quando os preços do petróleo estavam particularmente baixos, a Opep uniu forças com outros dez grandes produtores de petróleo para criar a Opep+, que tinha como missão reduzir a produção de petróleo e estabilizar o mercado global de energia. A decisão inicial ocorreu em setembro de 2016, durante a reunião em Argel, onde membros da OPEP concordaram em limitar a produção pela primeira vez desde 2008. Em novembro, a OPEP finalizou o acordo, e em dezembro, países não-membros (incluindo Rússia, México e outros) se comprometeram voluntariamente a cortes de produção, formando uma coalizão inédita para controlar o excesso de oferta global de petróleo.
 Essas restrições resultaram em aumentos moderados nos preços do petróleo e ajudaram a recuperar parte da estabilidade do mercado.O acordo se mostrou crucial para amortecer impactos de oscilações no preço do petróleo nos anos seguintes, especialmente durante crises.''')
 st.image('Imagens/Phyton/Python - Impacto acordo da OPEP.png', caption='Imapacto acordo da OPEP - 2016')
 
-st.subheader('Tensões geopolíticas do oriente médio:')
+st.markdown("<h3 style='color:#1C47D2;'>Tensões geopolíticas do oriente médio::</h3>", unsafe_allow_html=True)
 st.write('''As tensões geopolíticas no Oriente Médio em 2020 foram alimentadas principalmente pela rivalidade entre Estados Unidos e Irã e pelo conflito prolongado no Iêmen, que envolveu diversas potências regionais. As hostilidades entre EUA e Irã escalaram após o assassinato do general iraniano Qassem Soleimani em janeiro de 2020 por um ataque de drone dos EUA em Bagdá. Esse ato provocou uma resposta militar do Irã, que atacou bases americanas no Iraque. Em meio a essas tensões, os ataques iranianos a instalações petrolíferas sauditas em 2019 também mostraram o quanto a segurança energética global estava em risco, elevando a volatilidade no mercado de petróleo.
 O cenário já estava complicado pelo apoio do Irã a grupos na Síria, Iraque e Líbano, bem como ao grupo Houthi no Iêmen, que estava em conflito com uma coalizão liderada pela Arábia Saudita. Esse apoio provocou intensificação nas rivalidades, com impactos devastadores, como a piora da crise humanitária no Iêmen e a instabilidade nas fronteiras regionais. A pandemia de COVID-19 complicou ainda mais as relações e dificultou o progresso diplomático, embora houvesse algumas tentativas de mediação e reaproximação entre países do Golfo, como os Emirados Árabes Unidos e o Irã, principalmente devido ao impacto econômico da pandemia nas economias dependentes de petróleo da região.
 Essas tensões contribuíram para um cenário de incerteza, aumento de riscos e volatilidade nos preços de energia em 2020, destacando a importância de estabilidade na região para o mercado global de petróleo e para a segurança econômica.''')
 st.image('Imagens/Phyton/Python - Tensão geopolíticas do oriente méido.png', caption='Tensão geopolítica do oriente médio - 2020')
 
-st.subheader('Pandemia covid-19:')
+st.markdown("<h3 style='color:#595959;'>Pandemia covid-19</h3>", unsafe_allow_html=True)
 st.write('''A pandemia de COVID-19, que começou no final de 2019 e se espalhou globalmente em 2020, resultou em uma crise de saúde sem precedentes que afetou todos os aspectos da vida cotidiana, levando a bloqueios, restrições de viagem e mudanças significativas nos padrões de consumo e produção. As economias foram severamente impactadas, com muitos setores enfrentando quedas drásticas na demanda.
 Com a implementação de lockdowns e restrições de movimentação em todo o mundo, a demanda por petróleo caiu drasticamente. Indústrias, transporte e aviação sofreram com reduções severas no consumo. A demanda global de petróleo caiu cerca de 20% em abril de 2020, o que levou a um excesso de oferta significativo.
 Em abril de 2020, o preço do petróleo alcançou um marco histórico com o petróleo WTI (West Texas Intermediate) chegando a valores negativos pela primeira vez, refletindo que os produtores estavam dispostos a pagar para que as pessoas retirassem o petróleo de seus estoques, dado o colapso da demanda e a falta de capacidade de armazenamento.''')
