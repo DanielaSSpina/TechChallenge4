@@ -1,5 +1,6 @@
 import streamlit as st
 
+st.markdown("<h3 style='color:#000080;'>Tech Challenge 4 | Fiap</h3>", unsafe_allow_html=True)
 st.title('color:#0E2494[Tech Challenge 4 | Fiap]')
 st.subheader('Introdução')
 
