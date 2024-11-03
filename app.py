@@ -6,18 +6,20 @@ st.markdown("<h3 style='color:#6C778A;'>Introdução</h3>", unsafe_allow_html=Tr
 st.write('''Este trabalho tem como foco apresentar a análise do preço do petróleo brent, trazendo quatro acontecimentos que auxiliem a explicação das variação do preço e podem variar desde fatores geopolíticos até avanços tecnológicos. 
 Traremos além dos acontecimentos, uma análise por meio de um dashboard dinâmico dos dados, previsão analisada e MVP.''')
 
-st.markdown("<h3 style='color:#1C47D2;'>Ferramentas utilizadas</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color:#264CAC;'>Ferramentas utilizadas</h3>", unsafe_allow_html=True)
 st.write(''''Para a realização deste trabalho, foi utilizado as seguintes ferramentas:
 Python: utilizado para toda a tratativa inicial das bases como organização das colunas, remoção de espaços e duplicidades e valores nulo, assim como para a realização da previsão dos preços do petróleo por meio do modelo de machine learning PROPHET.
 PowerBI: utilizado para a criação de um dashboard interativo compilando as informações disponíveis do preço do petróleo, previsão e acontecimentos que influenciam na explicação da variação do preço.
 Streamlit: utilizado para desenvolvimento do MVP (Minimum Viable Product, ou Produto Mínimo Viável) e disponibilização das etapas e informações do projeto. ''''')
 
-st.markdown("<h3 style='color:#1C47D2;'>Metodologia</h3>", unsafe_allow_html=True)
-st.markdown("<h3 style='color:#595959;'>Origem e análise dos dados</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color:#264CAC;'>Metodologia</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color:#6C778A;'>Origem e análise dos dados</h3>", unsafe_allow_html=True)
 st.write('Os dados utilizados nesta análise foram extraídos do site do Instituto de Pesquisa Econômica Aplicada (Ipea). Após a extração, os dados foram salvos em um arquivo csv, e importados no python para tratamentos iniciais mostrados abaixo:')
 st. image ('Imagens/Phyton/Pyhton - importanto bibliotecas.png', caption='importando e instalando bibliotecasnecessárias')
 st.image('Imagens/Phyton/Pyhton - tratamento dos dados.png', caption='importação da base de dados e tratamento inicial')
-st.write('Após os tratamentos foi possível realizar a visualização gráfica.')
+
+st.markdown("<h3 style='color:#6C778A;'>Modelo de Machine Learning</h3>", unsafe_allow_html=True)
+
 
 st.subheader('Análise e visualizações de Dados')
 st.markdown("<h3 style='color:#1C47D2;'>Crise econômica de 2008:</h3>", unsafe_allow_html=True)
@@ -58,9 +60,6 @@ st.image('Imagens/Phyton/Python - Impacto da pandemia.png', caption='Pandemia Co
 
 
 st.subheader('Criação de Dashboard interativo')
-
-
-st.subheader('Modelo de Machine Learning')
 
 
 st.subheader('Conclusão')
