@@ -1,9 +1,5 @@
 import streamlit as st
-import os
 import pandas as pd
-import plotly.graph_objects as go
-from datetime import date, timedelta
-from model_lstm.model_lstm import predict, load_model_and_scaler, load_and_process_data, evaluate_lstm_model, create_sequences
 
 st.markdown("<p style='font-size:40px; color:#B40C40;'>Tech Challenge 4 | Fiap</p>", unsafe_allow_html=True)
 
