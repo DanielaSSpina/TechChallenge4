@@ -125,7 +125,7 @@ else:
 
 model_lstm.py
 
-Funções para carregar o modelo e fazer previsões.
+##Funções para carregar o modelo e fazer previsões.
 
 import os
 import numpy as np
