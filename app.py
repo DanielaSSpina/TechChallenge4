@@ -166,7 +166,7 @@ def evaluate_lstm_model(model, X_test, y_test, scaler_path):
     return r2, mse, mae, mape, rmse
 
 scaler_util.py
-Funções para carregar, escalar e desescalar os dados usando o scaler.
+##Funções para carregar, escalar e desescalar os dados usando o scaler.
 
 import os
 import joblib
@@ -190,7 +190,7 @@ def inverse_scale_data(scaled_data, scaler_path):
     return scaler.inverse_transform(scaled_data)
 
 train_lstm.py
-Funções para carregar os dados, treinar o modelo LSTM, e salvar o modelo e o scaler.
+##Funções para carregar os dados, treinar o modelo LSTM, e salvar o modelo e o scaler.
 
 import os
 import pandas as pd
