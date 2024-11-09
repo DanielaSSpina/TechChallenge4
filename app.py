@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from model_lstm import load_lstm_model, predict_with_lstm
-from scaler_util import scale_data, inverse_scale_data
 
 st.markdown("<p style='font-size:40px; color:#B40C40;'>Tech Challenge 4 | Fiap</p>", unsafe_allow_html=True)
 
