@@ -25,7 +25,7 @@ PowerBI: utilizado para a criação de um dashboard interativo compilando as inf
 Streamlit: utilizado para desenvolvimento do MVP (Minimum Viable Product, ou Produto Mínimo Viável) e disponibilização das etapas e informações do projeto. ''''')
 
 elif pagina == "Metodologia":
-    st.title("<h3 style='color:#264CAC;Metodologia</h3>", unsafe_allow_html=True")
+    st.title("<h3 style='color:#264CAC;'>Metodologia</h3>", unsafe_allow_html=True)
 st.markdown("<h3 style='color:#6C778A;'>Origem e análise dos dados</h3>", unsafe_allow_html=True)
 st.write('Os dados utilizados nesta análise foram extraídos do site do Instituto de Pesquisa Econômica Aplicada (Ipea). Após a extração, os dados foram salvos em um arquivo csv, e importados no python para tratamentos iniciais mostrados abaixo:')
 st. image ('Imagens/Phyton/Pyhton - importanto bibliotecas.png', caption='importando e instalando bibliotecas necessárias')
