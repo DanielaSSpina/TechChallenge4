@@ -27,51 +27,43 @@ Traremos além dos acontecimentos, uma análise por meio de um dashboard dinâmi
 elif pagina == "Metodologia":
     st.markdown("<h3 style='color:#264CAC;'>Metodologia</h3>", unsafe_allow_html=True)
     st.markdown("<h3 style='color:#6C778A;'>Origem e análise dos dados</h3>", unsafe_allow_html=True)
-    st.write('Os dados utilizados nesta análise foram extraídos do site do Instituto de Pesquisa Econômica Aplicada (Ipea). Após a extração, os dados foram salvos em um arquivo csv, e importados no python para tratamentos iniciais mostrados abaixo:')
-    st. image ('Imagens/Phyton/Pyhton - importanto bibliotecas.png', caption='importando e instalando bibliotecas necessárias')
-    st.image('Imagens/Phyton/Pyhton - tratamento dos dados.png', caption='importação da base de dados e tratamento inicial')
+    st.write('Os dados utilizados nesta análise foram extraídos do site do Instituto de Pesquisa Econômica Aplicada (Ipea). Após a extração, os dados foram salvos em um arquivo excel, e importados no python para tratamentos iniciais mostrados abaixo:')
+    st. image ('Imagens/Python/1. Pyhton - importanto bibliotecas.png', caption='importando e instalando bibliotecas necessárias')
+    st. image ('Imagens/Python/2. Python - importando bibliotecas.png', caption='importando e instalando bibliotecas necessárias')
+    st.image('Imagens/Python/3. Python - tratamento de dados.png', caption='importação da base de dados e tratamento inicial')
 
     st.markdown("<h3 style='color:#6C778A;'>Modelo de Machine Learning</h3>", unsafe_allow_html=True)
     st.write('Para realizar o machine learning dos nossos dados, utilizamos o modelo Prophet, pois é uma ferramenta que se destaca em cenários onde previsões de longo prazo e ajustes a tendências e sazonalidades complexas são necessários.')
-    st. image ('Imagens/Phyton/Python - preparação dados previsão.png', caption='preparando os dados para o Prophet')
-    st. image ('Imagens/Phyton/Python - preparação dados previsão 2.png', caption='visualizando datas e df')
-    st. image ('Imagens/Phyton/Python - preparação dados previsão 3.png', caption='ajustando dados data e criando index')
-    st. image ('Imagens/Phyton/Python - preparação dados previsão 4.png', caption='iniciando a previsão dos dados')
-    st. image ('Imagens/Phyton/Python - Plot Prophet.png', caption='gráficos plotados de tendência e sazonalidade')
-    st. image ('Imagens/Phyton/Python - Forecast.png', caption='criação do forecast')
-    st. image ('Imagens/Phyton/Python - criando arquivo de previsão.png', caption='criando arquivo de previsão')
-    st. image ('Imagens/Phyton/Python - acurácia dados previsão.png', caption='validando acurácia do modelo')
+    st. image ('Imagens/Python/9. Python - Estrutura do dado para previsão.png', caption='preparando os dados para o Prophet')
+    st. image ('Imagens/Python/10. Python - Preparação para previsão.png', caption='preparando os dados para o Prophet')
+    st. image ('Imagens/Python/11. Python - Visualização da previsão.png', caption='gráficos plotados de tendência e sazonalidade')
+    st. image ('Imagens/Python/12. Python - Forecasting.png', caption='criação do forecast')
+    st. image ('Imagens/Python/13. Python - Unindo bases para previsão.png', caption='unindo bases para a criação do arquivo de previsão')
+    st. image ('Imagens/Python/14. Python - Acurácia do modelo.png', caption='validando acurácia do modelo')
 
 elif pagina == "Principais Acontecimentos":
     st.markdown("<h3 style='color:#264CAC;'>Principais Acontecimentos</h3>", unsafe_allow_html=True)
 
     st.markdown("<h3 style='color:#6C778A;'>Crise econômica de 2008:</h3>", unsafe_allow_html=True)
     st.write('''A crise financeira de 2008, a mais grave desde a Grande Depressão, começou nos Estados Unidos e rapidamente se espalhou globalmente, afetando bancos, mercados financeiros e milhões de pessoas. A bolha imobiliária foi alimentada por empréstimos de alto risco, chamados "subprime", e pela especulação de que imóveis seriam investimentos seguros. Quando os preços dos imóveis caíram, muitos proprietários ficaram com dívidas maiores do que o valor das casas. Isso causou grandes perdas em instituições financeiras, como Lehman Brothers, que faliu em setembro de 2008. O congelamento do crédito afetou empresas e consumidores, gerando uma recessão global. O preço do petróleo inicialmente subiu devido a preocupações geopolíticas, mas caiu drasticamente no final de 2008, devido à queda na demanda causada pela desaceleração econômica.''')
-    st.image('Imagens/Phyton/Python - Crise econômica de 2008.png', caption='Crise econômica de 2008')
+    st.image('Imagens/Python/6. Python - visualização do impacto - Crise econômica.png', caption='Crise econômica de 2008')
 
     st.markdown("<h3 style='color:#6C778A;'>Impacto do acordo da OPEP:</h3>", unsafe_allow_html=True)
     st.write('''A OPEP (Organização dos Países Exportadores de Petróleo e Aliados) que foi criada em 1960 inicialmente por 5 países que exportam petróleos e ao longo dos anos outros paises foram convidados a participar.
 Ela foi criada com o objetivo de estabelecer uma política comum em relação à produção e à venda de petróleo, de forma a influenciar os preços do petróleo no mercado internacional. Por serem grandes produtores, seus membros são capazes mexer com as cotações, ao aumentar ou cortar a produção de forma coordenada.
 Em 2016, quando os preços do petróleo estavam particularmente baixos, a Opep uniu forças com outros dez grandes produtores de petróleo para criar a Opep+, que tinha como missão reduzir a produção de petróleo e estabilizar o mercado global de energia. A decisão inicial ocorreu em setembro de 2016, durante a reunião em Argel, onde membros da OPEP concordaram em limitar a produção pela primeira vez desde 2008. Em novembro, a OPEP finalizou o acordo, e em dezembro, países não-membros (incluindo Rússia, México e outros) se comprometeram voluntariamente a cortes de produção, formando uma coalizão inédita para controlar o excesso de oferta global de petróleo.
 Essas restrições resultaram em aumentos moderados nos preços do petróleo e ajudaram a recuperar parte da estabilidade do mercado.O acordo se mostrou crucial para amortecer impactos de oscilações no preço do petróleo nos anos seguintes, especialmente durante crises.''')
-    st.image('Imagens/Phyton/Python - Impacto acordo da OPEP.png', caption='Imapacto acordo da OPEP - 2016')
+    st.image('Imagens/Python/7. Python - Visualização do impacto - Acordo opep.png', caption='Imapacto acordo da OPEP - 2016')
 
     st.markdown("<h3 style='color:#6C778A;'>Tensões geopolíticas do Oriente Médio:</h3>", unsafe_allow_html=True)
-    st.write('''As tensões geopolíticas no Oriente Médio em 2020 foram intensificadas pela rivalidade entre os EUA e o Irã, além do conflito no Iêmen, que envolvia potências regionais. O assassinato do general iraniano Qassem Soleimani pelos EUA em janeiro de 2020 gerou uma resposta militar do Irã, com ataques a bases americanas no Iraque. Além disso, o Irã atacou instalações petrolíferas sauditas, elevando a volatilidade no mercado de petróleo. O apoio iraniano a grupos no Iêmen, Síria e Iraque intensificou as rivalidades, agravando a crise humanitária no Iêmen. A pandemia de COVID-19 também complicou as relações, embora houvesse tentativas de reaproximação entre países do Golfo. Essas tensões aumentaram a incerteza e volatilidade nos preços de energia, destacando a importância da estabilidade na região para a segurança econômica global.
-
-
-
-
-
-
-''')
-    st.image('Imagens/Phyton/Python - Tensão geopolíticas do oriente méido.png', caption='Tensão geopolítica do oriente médio - 2020')
+    st.write('''As tensões geopolíticas no Oriente Médio em 2020 foram intensificadas pela rivalidade entre os EUA e o Irã, além do conflito no Iêmen, que envolvia potências regionais. O assassinato do general iraniano Qassem Soleimani pelos EUA em janeiro de 2020 gerou uma resposta militar do Irã, com ataques a bases americanas no Iraque. Além disso, o Irã atacou instalações petrolíferas sauditas, elevando a volatilidade no mercado de petróleo. O apoio iraniano a grupos no Iêmen, Síria e Iraque intensificou as rivalidades, agravando a crise humanitária no Iêmen. A pandemia de COVID-19 também complicou as relações, embora houvesse tentativas de reaproximação entre países do Golfo. Essas tensões aumentaram a incerteza e volatilidade nos preços de energia, destacando a importância da estabilidade na região para a segurança econômica global.''')
+    st.image('Imagens/Python/5. Python - visualização do impacto - Tensões no oriente.png', caption='Tensão geopolítica do oriente médio - 2020')
 
     st.markdown("<h3 style='color:#6C778A;'>Pandemia covid-19</h3>", unsafe_allow_html=True)
     st.write('''A pandemia de COVID-19, que começou no final de 2019 e se espalhou globalmente em 2020, resultou em uma crise de saúde sem precedentes que afetou todos os aspectos da vida cotidiana, levando a bloqueios, restrições de viagem e mudanças significativas nos padrões de consumo e produção. As economias foram severamente impactadas, com muitos setores enfrentando quedas drásticas na demanda.
 Com a implementação de lockdowns e restrições de movimentação em todo o mundo, a demanda por petróleo caiu drasticamente. Indústrias, transporte e aviação sofreram com reduções severas no consumo. A demanda global de petróleo caiu cerca de 20% em abril de 2020, o que levou a um excesso de oferta significativo.
 Em abril de 2020, o preço do petróleo alcançou um marco histórico com o petróleo WTI (West Texas Intermediate) chegando a valores negativos pela primeira vez, refletindo que os produtores estavam dispostos a pagar para que as pessoas retirassem o petróleo de seus estoques, dado o colapso da demanda e a falta de capacidade de armazenamento.''')
-    st.image('Imagens/Phyton/Python - Impacto da pandemia.png', caption='Pandemia Covid19 2020 - 2021')
+    st.image('Imagens/Python/4. Python - visualização de impacto - pandemia.png', caption='Pandemia Covid19 2020 - 2021')
 
 elif pagina == "Dashboard Interativo":
     st.markdown("<h3 style='color:#264CAC;'>Dashboard Interativo</h3>", unsafe_allow_html=True)
