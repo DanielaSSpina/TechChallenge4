@@ -42,7 +42,7 @@ st. image ('Imagens/Phyton/Python - Forecast.png', caption='criação do forecas
 st. image ('Imagens/Phyton/Python - criando arquivo de previsão.png', caption='criando arquivo de previsão')
 st. image ('Imagens/Phyton/Python - acurácia dados previsão.png', caption='validando acurácia do modelo')
 
-elif pagina == "Principais Acontecimentos":
+elif página == "Principais Acontecimentos":
     st.markdown("<h3 style='color:#264CAC;'>Principais Acontecimentos</h3>", unsafe_allow_html=True)
 
     st.markdown("<h3 style='color:#6C778A;'>Crise econômica de 2008:</h3>", unsafe_allow_html=True)
