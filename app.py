@@ -14,7 +14,7 @@ pagina = st.sidebar.radio("Escolha a Página", ["Introdução", "Metodologia", "
 
 # Conteúdo de cada página
 if pagina == "Introdução":
-    st. image ('Imagens/Banner/Gemini_Generated_Página inicial.jpeg')
+    st. image ('Imagens/Banner/Página inicial - GG.jpeg')
     st.markdown("<h3 style='color:#264CAC;'>Introdução</h3>", unsafe_allow_html=True)
     st.write('''Este trabalho tem como foco apresentar a análise do preço do petróleo brent, trazendo quatro acontecimentos que auxiliem a explicação das variação do preço e podem variar desde fatores geopolíticos até avanços tecnológicos. 
 Traremos além dos acontecimentos, uma análise por meio de um dashboard dinâmico dos dados, previsão analisada e MVP.''')
