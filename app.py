@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Configuração do título do aplicativo (DEVE SER A PRIMEIRA LINHA)
+# Configuração do título do aplicativo
 st.set_page_config(page_title="Projeto de Previsão de Preço de Petróleo", page_icon="📊", layout="wide")
 
 st.markdown("<p style='font-size:40px; color:#B40C40;'>Tech Challenge 4 | Fiap</p>", unsafe_allow_html=True)
@@ -14,7 +14,7 @@ pagina = st.sidebar.radio("Escolha a Página", ["Introdução", "Metodologia", "
 
 # Conteúdo de cada página
 if pagina == "Introdução":
-    st.title("<h3 style='color:#264CAC;'>Introdução</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:#264CAC;'>Introdução</h3>", unsafe_allow_html=True)
     st.write('''Este trabalho tem como foco apresentar a análise do preço do petróleo brent, trazendo quatro acontecimentos que auxiliem a explicação das variação do preço e podem variar desde fatores geopolíticos até avanços tecnológicos. 
 Traremos além dos acontecimentos, uma análise por meio de um dashboard dinâmico dos dados, previsão analisada e MVP.''')
 
@@ -22,12 +22,12 @@ Traremos além dos acontecimentos, uma análise por meio de um dashboard dinâmi
     st.write('Para a realização deste trabalho, foi utilizado as seguintes ferramentas: ...')
 
 elif pagina == "Metodologia":
-    st.title("<h3 style='color:#264CAC;'>Metodologia</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:#264CAC;'>Metodologia</h3>", unsafe_allow_html=True)
     st.markdown("<h3 style='color:#6C778A;'>Origem e análise dos dados</h3>", unsafe_allow_html=True)
     st.write('Os dados utilizados nesta análise foram extraídos do site do Instituto de Pesquisa Econômica Aplicada (Ipea)...')
 
 elif pagina == "Principais Acontecimentos":
-    st.title("<h3 style='color:#264CAC;'>Principais Acontecimentos</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:#264CAC;'>Principais Acontecimentos</h3>", unsafe_allow_html=True)
 
     st.markdown("<h3 style='color:#6C778A;'>Crise econômica de 2008:</h3>", unsafe_allow_html=True)
     st.write('''A crise econômica de 2008 é também conhecida como a crise financeira global...''')
@@ -46,19 +46,19 @@ elif pagina == "Principais Acontecimentos":
     st.image('Imagens/Phyton/Python - Impacto da pandemia.png', caption='Pandemia Covid19 2020 - 2021')
 
 elif pagina == "Dashboard Interativo":
-    st.title("<h3 style='color:#264CAC;'>Dashboard Interativo</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:#264CAC;'>Dashboard Interativo</h3>", unsafe_allow_html=True)
     st.write("Aqui está o seu dashboard interativo.")
 
 elif pagina == "MVP":
-    st.title("<h3 style='color:#264CAC;'>MVP</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:#264CAC;'>MVP</h3>", unsafe_allow_html=True)
     # Código do MVP
 
 elif pagina == "Conclusão":
-    st.title("<h3 style='color:#264CAC;'>Conclusão</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:#264CAC;'>Conclusão</h3>", unsafe_allow_html=True)
     st.write("Aqui você pode escrever as conclusões do seu trabalho de pesquisa e as lições aprendidas.")
 
 elif pagina == "Referências":
-    st.title("<h3 style='color:#264CAC;'>Referências</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:#264CAC;'>Referências</h3>", unsafe_allow_html=True)
     # Referências
     
 st.markdown("<h3 style='color:#6C778A;'>Crise financeira 2008</h3>", unsafe_allow_html=True)
