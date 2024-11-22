@@ -87,58 +87,59 @@ elif pagina == "Dashboard Interativo":
 
 elif pagina == "MVP":
     st.markdown("<h3 style='color:#264CAC;'>MVP</h3>", unsafe_allow_html=True)
-  
-     @st.cache
-def load_data():
-    data_path = "Documentos/Dados  petroleo Forecasting .xlsx"  # Substitua com o nome correto ao fazer upload
-    data = pd.read_excel(data_path)
-    data['data'] = pd.to_datetime(data['data'])
-    return data
 
-# Configuração inicial
-st.title("MVP: Previsão do Preço do Petróleo")
-st.write("Utilizando dados do modelo Prophet para análise e visualização interativa.")
+    # Corrigindo a indentação do decorador e da função
+    @st.cache
+    def load_data():
+        data_path = "Documentos/Dados  petroleo Forecasting .xlsx"  # Substitua com o nome correto ao fazer upload
+        data = pd.read_excel(data_path)
+        data['data'] = pd.to_datetime(data['data'])
+        return data
 
-data = load_data()
+    # Configuração inicial
+    st.title("MVP: Previsão do Preço do Petróleo")
+    st.write("Utilizando dados do modelo Prophet para análise e visualização interativa.")
 
-# Filtro por intervalo de datas
-st.sidebar.header("Filtro de Datas")
-start_date = st.sidebar.date_input("Data Inicial", data['data'].min())
-end_date = st.sidebar.date_input("Data Final", data['data'].max())
+    data = load_data()
 
-filtered_data = data[(data['data'] >= pd.to_datetime(start_date)) & (data['data'] <= pd.to_datetime(end_date))]
+    # Filtro por intervalo de datas
+    st.sidebar.header("Filtro de Datas")
+    start_date = st.sidebar.date_input("Data Inicial", data['data'].min())
+    end_date = st.sidebar.date_input("Data Final", data['data'].max())
 
-# Exibir dados filtrados
-st.write(f"Exibindo dados entre {start_date} e {end_date}")
-st.dataframe(filtered_data)
+    filtered_data = data[(data['data'] >= pd.to_datetime(start_date)) & (data['data'] <= pd.to_datetime(end_date))]
 
-# Visualização do Preço Realizado e Previsão
-st.header("Comparação: Preço Realizado vs. Previsão")
-fig, ax = plt.subplots(figsize=(10, 6))
-ax.plot(filtered_data['data'], filtered_data['Fechamento realizado'], label="Fechamento Realizado", color="blue")
-ax.plot(filtered_data['data'], filtered_data['preco_previsto'], label="Preço Previsto", color="orange")
-ax.set_title("Preço do Petróleo: Realizado vs. Previsto")
-ax.set_xlabel("Data")
-ax.set_ylabel("Preço (US$)")
-ax.legend()
-st.pyplot(fig)
+    # Exibir dados filtrados
+    st.write(f"Exibindo dados entre {start_date} e {end_date}")
+    st.dataframe(filtered_data)
 
-# Insights resumidos
-st.header("Insights")
-st.write("1. A previsão segue a tendência geral dos preços realizados com desvios ocasionais.")
-st.write("2. As maiores diferenças entre previsão e valores reais ocorrem em períodos de maior volatilidade.")
-st.write("3. O modelo mostra boa performance em períodos de estabilidade.")
-st.write("4. Eventos econômicos ou geopolíticos específicos podem impactar a precisão.")
+    # Visualização do Preço Realizado e Previsão
+    st.header("Comparação: Preço Realizado vs. Previsão")
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.plot(filtered_data['data'], filtered_data['Fechamento realizado'], label="Fechamento Realizado", color="blue")
+    ax.plot(filtered_data['data'], filtered_data['preco_previsto'], label="Preço Previsto", color="orange")
+    ax.set_title("Preço do Petróleo: Realizado vs. Previsto")
+    ax.set_xlabel("Data")
+    ax.set_ylabel("Preço (US$)")
+    ax.legend()
+    st.pyplot(fig)
 
-# Download dos dados filtrados
-st.header("Exportar Dados Filtrados")
-csv = filtered_data.to_csv(index=False)
-st.download_button(
-    label="Baixar dados filtrados como CSV",
-    data=csv,
-    file_name="dados_filtrados_petroleo.csv",
-    mime="text/csv"
-)
+    # Insights resumidos
+    st.header("Insights")
+    st.write("1. A previsão segue a tendência geral dos preços realizados com desvios ocasionais.")
+    st.write("2. As maiores diferenças entre previsão e valores reais ocorrem em períodos de maior volatilidade.")
+    st.write("3. O modelo mostra boa performance em períodos de estabilidade.")
+    st.write("4. Eventos econômicos ou geopolíticos específicos podem impactar a precisão.")
+
+    # Download dos dados filtrados
+    st.header("Exportar Dados Filtrados")
+    csv = filtered_data.to_csv(index=False)
+    st.download_button(
+        label="Baixar dados filtrados como CSV",
+        data=csv,
+        file_name="dados_filtrados_petroleo.csv",
+        mime="text/csv"
+    )
 
 elif pagina == "Conclusão":
     st.markdown("<h3 style='color:#264CAC;'>Conclusão</h3>", unsafe_allow_html=True)
