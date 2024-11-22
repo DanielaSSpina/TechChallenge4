@@ -87,7 +87,8 @@ elif pagina == "Dashboard Interativo":
 
 elif pagina == "MVP":
     st.markdown("<h3 style='color:#264CAC;'>MVP</h3>", unsafe_allow_html=True)
-   @st.cache
+  
+     @st.cache
 def load_data():
     data_path = "Documentos/Dados  petroleo Forecasting .xlsx"  # Substitua com o nome correto ao fazer upload
     data = pd.read_excel(data_path)
