@@ -84,7 +84,7 @@ st.image('Imagens/Phyton/Python - Impacto da pandemia.png', caption='Pandemia Co
 
 
 elif pagina == "Dashboard Interativo":
-    st.title("<h3 style='color:#264CAC;'>Dashboard Interativo</h3>", unsafe_allow_html=True")
+    st.title("<h3 style='color:#264CAC;'>Dashboard Interativo</h3>", unsafe_allow_html=True)
     st.write("Aqui está o seu dashboard interativo.")
 
 elif pagina == "MVP":
