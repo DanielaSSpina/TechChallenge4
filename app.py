@@ -74,7 +74,7 @@ elif pagina == "Dashboard Interativo":
     st.write("Aqui está o seu dashboard interativo.")
 
 elif pagina == "MVP":
-    st. image ('Imagens/Banner/MVP GG.jpeg')
+    st. image ('Imagens/Banner/MVP GG 2048x733.jpeg')
     st.markdown("<h3 style='color:#264CAC;'>MVP</h3>", unsafe_allow_html=True)
 
     # Corrigindo a indentação do decorador e da função
