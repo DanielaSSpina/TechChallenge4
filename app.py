@@ -57,9 +57,14 @@ Essas restrições resultaram em aumentos moderados nos preços do petróleo e a
     st.image('Imagens/Phyton/Python - Impacto acordo da OPEP.png', caption='Imapacto acordo da OPEP - 2016')
 
     st.markdown("<h3 style='color:#6C778A;'>Tensões geopolíticas do Oriente Médio:</h3>", unsafe_allow_html=True)
-    st.write('''As tensões geopolíticas no Oriente Médio em 2020 foram alimentadas principalmente pela rivalidade entre Estados Unidos e Irã e pelo conflito prolongado no Iêmen, que envolveu diversas potências regionais. As hostilidades entre EUA e Irã escalaram após o assassinato do general iraniano Qassem Soleimani em janeiro de 2020 por um ataque de drone dos EUA em Bagdá. Esse ato provocou uma resposta militar do Irã, que atacou bases americanas no Iraque. Em meio a essas tensões, os ataques iranianos a instalações petrolíferas sauditas em 2019 também mostraram o quanto a segurança energética global estava em risco, elevando a volatilidade no mercado de petróleo.
-O cenário já estava complicado pelo apoio do Irã a grupos na Síria, Iraque e Líbano, bem como ao grupo Houthi no Iêmen, que estava em conflito com uma coalizão liderada pela Arábia Saudita. Esse apoio provocou intensificação nas rivalidades, com impactos devastadores, como a piora da crise humanitária no Iêmen e a instabilidade nas fronteiras regionais. A pandemia de COVID-19 complicou ainda mais as relações e dificultou o progresso diplomático, embora houvesse algumas tentativas de mediação e reaproximação entre países do Golfo, como os Emirados Árabes Unidos e o Irã, principalmente devido ao impacto econômico da pandemia nas economias dependentes de petróleo da região.
-Essas tensões contribuíram para um cenário de incerteza, aumento de riscos e volatilidade nos preços de energia em 2020, destacando a importância de estabilidade na região para o mercado global de petróleo e para a segurança econômica.''')
+    st.write('''As tensões geopolíticas no Oriente Médio em 2020 foram intensificadas pela rivalidade entre os EUA e o Irã, além do conflito no Iêmen, que envolvia potências regionais. O assassinato do general iraniano Qassem Soleimani pelos EUA em janeiro de 2020 gerou uma resposta militar do Irã, com ataques a bases americanas no Iraque. Além disso, o Irã atacou instalações petrolíferas sauditas, elevando a volatilidade no mercado de petróleo. O apoio iraniano a grupos no Iêmen, Síria e Iraque intensificou as rivalidades, agravando a crise humanitária no Iêmen. A pandemia de COVID-19 também complicou as relações, embora houvesse tentativas de reaproximação entre países do Golfo. Essas tensões aumentaram a incerteza e volatilidade nos preços de energia, destacando a importância da estabilidade na região para a segurança econômica global.
+
+
+
+
+
+
+''')
     st.image('Imagens/Phyton/Python - Tensão geopolíticas do oriente méido.png', caption='Tensão geopolítica do oriente médio - 2020')
 
     st.markdown("<h3 style='color:#6C778A;'>Pandemia covid-19</h3>", unsafe_allow_html=True)
