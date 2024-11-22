@@ -59,15 +59,17 @@ elif pagina == "Conclusão":
 
 elif pagina == "Referências":
     st.markdown("<h3 style='color:#264CAC;'>Referências</h3>", unsafe_allow_html=True)
-  st.markdown("<h3 style='color:#6C778A;'>Crise financeira 2008</h3>", unsafe_allow_html=True)
-st.write('''https://www.investopedia.com/ask/answers/052715/how-did-financial-crisis-affect-oil-and-gas-sector.asp
-https://cepr.org/voxeu/columns/oil-prices-and-economic-recession-2007-08
-https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp''')
-st.markdown("<h3 style='color:#6C778A;'>Informações OPEP</h3>", unsafe_allow_html=True)
-st.write('''https://www.ecb.europa.eu/pub/pdf/other/eb201608_focus01.en.pdf
-https://www.opec.org/opec_web/en/press_room/6748.htm
-https://oglobo.globo.com/economia/noticia/2023/11/30/o-que-e-a-opep-como-ela-funciona-e-o-que-o-brasil-tem-a-ganhar-caso-se-torne-um-membro.ghtml''')
-st.markdown("<h3 style='color:#6C778A;'>Tensões geopolíticas do oriente médio</h3>", unsafe_allow_html=True)
-st.write('''https://www.wilsoncenter.org/article/explainer-roots-and-realities-10-conflicts-middle-east
-https://www.iemed.org/publication/geopolitical-trends-shifts-challenges-and-fractures-of-the-post-arab-spring-2020-2021/
-https://www.brookings.edu/articles/the-middle-east-and-north-africa-over-the-next-decade-key-challenges-and-policy-options/''')
+    st.markdown("<h3 style='color:#6C778A;'>Crise financeira 2008</h3>", unsafe_allow_html=True)
+    st.write('''https://www.investopedia.com/ask/answers/052715/how-did-financial-crisis-affect-oil-and-gas-sector.asp
+    https://cepr.org/voxeu/columns/oil-prices-and-economic-recession-2007-08
+    https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp''')
+    
+    st.markdown("<h3 style='color:#6C778A;'>Informações OPEP</h3>", unsafe_allow_html=True)
+    st.write('''https://www.ecb.europa.eu/pub/pdf/other/eb201608_focus01.en.pdf
+    https://www.opec.org/opec_web/en/press_room/6748.htm
+    https://oglobo.globo.com/economia/noticia/2023/11/30/o-que-e-a-opep-como-ela-funciona-e-o-que-o-brasil-tem-a-ganhar-caso-se-torne-um-membro.ghtml''')
+    
+    st.markdown("<h3 style='color:#6C778A;'>Tensões geopolíticas do oriente médio</h3>", unsafe_allow_html=True)
+    st.write('''https://www.wilsoncenter.org/article/explainer-roots-and-realities-10-conflicts-middle-east
+    https://www.iemed.org/publication/geopolitical-trends-shifts-challenges-and-fractures-of-the-post-arab-spring-2020-2021/
+    https://www.brookings.edu/articles/the-middle-east-and-north-africa-over-the-next-decade-key-challenges-and-policy-options/''')
