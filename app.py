@@ -26,6 +26,7 @@ Traremos além dos acontecimentos, uma análise por meio de um dashboard dinâmi
     st.write('Streamlit: utilizado para desenvolvimento do MVP (Minimum Viable Product, ou Produto Mínimo Viável) e disponibilização das etapas e informações do projeto.')
 
 elif pagina == "Metodologia":
+    st. image ('Imagens/Banner/Metodologia GG 2048x733.jpeg')
     st.markdown("<h3 style='color:#264CAC;'>Metodologia</h3>", unsafe_allow_html=True)
     st.markdown("<h3 style='color:#6C778A;'>Origem e análise dos dados</h3>", unsafe_allow_html=True)
     st.write('Os dados utilizados nesta análise foram extraídos do site do Instituto de Pesquisa Econômica Aplicada (Ipea). Após a extração, os dados foram salvos em um arquivo excel, e importados no python para tratamentos iniciais mostrados abaixo:')
@@ -43,6 +44,7 @@ elif pagina == "Metodologia":
     st. image ('Imagens/Python/14. Python - Acurácia do modelo.png', caption='validando acurácia do modelo')
 
 elif pagina == "Principais Acontecimentos":
+    st. image ('Imagens/Banner/Acontecimentos GG 2048x733.jpeg')
     st.markdown("<h3 style='color:#264CAC;'>Principais Acontecimentos</h3>", unsafe_allow_html=True)
 
     st.markdown("<h3 style='color:#6C778A;'>Crise econômica de 2008:</h3>", unsafe_allow_html=True)
@@ -67,10 +69,12 @@ Em abril de 2020, o preço do petróleo alcançou um marco histórico com o petr
     st.image('Imagens/Python/4. Python - visualização de impacto - pandemia.png', caption='Pandemia Covid19 2020 - 2021')
 
 elif pagina == "Dashboard Interativo":
+    st. image ('Imagens/Banner/Dashboard GG 2048x733.jpeg')
     st.markdown("<h3 style='color:#264CAC;'>Dashboard Interativo</h3>", unsafe_allow_html=True)
     st.write("Aqui está o seu dashboard interativo.")
 
 elif pagina == "MVP":
+    st. image ('Imagens/Banner/MVP GG.jpeg')
     st.markdown("<h3 style='color:#264CAC;'>MVP</h3>", unsafe_allow_html=True)
 
     # Corrigindo a indentação do decorador e da função
@@ -127,10 +131,12 @@ elif pagina == "MVP":
     )
 
 elif pagina == "Conclusão":
+    st. image ('Imagens/Banner/Conclusão GG.jpg')
     st.markdown("<h3 style='color:#264CAC;'>Conclusão</h3>", unsafe_allow_html=True)
     st.write("Aqui você pode escrever as conclusões do seu trabalho de pesquisa e as lições aprendidas.")
 
 elif pagina == "Referências":
+    st. image ('Imagens/Banner/Referência GG.jpg')
     st.markdown("<h3 style='color:#264CAC;'>Referências</h3>", unsafe_allow_html=True)
     st.markdown("<h3 style='color:#6C778A;'>Crise financeira 2008</h3>", unsafe_allow_html=True)
     st.write('''https://www.investopedia.com/ask/answers/052715/how-did-financial-crisis-affect-oil-and-gas-sector.asp
