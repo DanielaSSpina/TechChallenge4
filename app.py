@@ -151,7 +151,7 @@ elif pagina == "Conclusão":
 
 
 elif pagina == "Referências":
-    st.title("<h3 style='color:#264CAC;'>Referências</h3>", unsafe_allow_html=True")
+    st.title("<h3 style='color:#264CAC;'>Referências</h3>", unsafe_allow_html=True)
     
 st.markdown("<h3 style='color:#6C778A;'>Crise financeira 2008</h3>", unsafe_allow_html=True)
 st.write('''https://www.investopedia.com/ask/answers/052715/how-did-financial-crisis-affect-oil-and-gas-sector.asp
