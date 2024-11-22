@@ -43,7 +43,8 @@ st. image ('Imagens/Phyton/Python - criando arquivo de previsão.png', caption='
 st. image ('Imagens/Phyton/Python - acurácia dados previsão.png', caption='validando acurácia do modelo')
 
 elif pagina == "Principais Acontecimentos":
-    st.title("<h3 style='color:#264CAC;'>Principais Acontecimentos</h3>", unsafe_allow_html=True")
+    st.title("<h3 style='color:#264CAC;'>Principais Acontecimentos</h3>", unsafe_allow_html=True)
+
 
         st.markdown("<h3 style='color:#6C778A;'>Crise econômica de 2008:</h3>", unsafe_allow_html=True)
 st.write('''A crise econômica de é também conhecida como a crise financeira global, foi uma das mais graves desde a Grande Depressão de 1929. Ela teve início nos Estados Unidos e rapidamente se espalhou para o resto do mundo, afetando bancos, mercados financeiros, empresas e, principalmente, a vida de milhões de pessoas.
