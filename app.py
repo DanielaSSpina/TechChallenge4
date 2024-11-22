@@ -5,9 +5,17 @@ import matplotlib.pyplot as plt
 
 st.markdown("<p style='font-size:40px; color:#B40C40;'>Tech Challenge 4 | Fiap</p>", unsafe_allow_html=True)
 
-st.markdown("<h3 style='color:#264CAC;'>Introdução</h3>", unsafe_allow_html=True)
+# Configuração do título do aplicativo
+st.set_page_config(page_title="Projeto de Previsão de Preço de Petróleo", page_icon="📊", layout="wide")
 
-st.write('''Este trabalho tem como foco apresentar a análise do preço do petróleo brent, trazendo quatro acontecimentos que auxiliem a explicação das variação do preço e podem variar desde fatores geopolíticos até avanços tecnológicos. 
+# Criando um menu de navegação com `selectbox` ou `radio`
+pagina = st.sidebar.radio("Escolha a Página", ["Introdução", "Metodologia", "Principais Acontecimentos", 
+                                               "Dashboard Interativo", "MVP", "Conclusão", "Referências"])
+
+# Conteúdo de cada página
+if pagina == "Introdução":
+    st.title("<h3 style='color:#264CAC;'>Introdução</h3>",unsafe_allow_html=True)
+    st.write('''Este trabalho tem como foco apresentar a análise do preço do petróleo brent, trazendo quatro acontecimentos que auxiliem a explicação das variação do preço e podem variar desde fatores geopolíticos até avanços tecnológicos. 
 Traremos além dos acontecimentos, uma análise por meio de um dashboard dinâmico dos dados, previsão analisada e MVP.''')
 
 st.markdown("<h3 style='color:#264CAC;'>Ferramentas utilizadas</h3>", unsafe_allow_html=True)
@@ -16,7 +24,8 @@ Python: utilizado para toda a tratativa inicial das bases como organização das
 PowerBI: utilizado para a criação de um dashboard interativo compilando as informações disponíveis do preço do petróleo, previsão e acontecimentos que influenciam na explicação da variação do preço.
 Streamlit: utilizado para desenvolvimento do MVP (Minimum Viable Product, ou Produto Mínimo Viável) e disponibilização das etapas e informações do projeto. ''''')
 
-st.markdown("<h3 style='color:#264CAC;'>Metodologia</h3>", unsafe_allow_html=True)
+elif pagina == "Metodologia":
+    st.title("<h3 style='color:#264CAC;Metodologia</h3>", unsafe_allow_html=True")
 st.markdown("<h3 style='color:#6C778A;'>Origem e análise dos dados</h3>", unsafe_allow_html=True)
 st.write('Os dados utilizados nesta análise foram extraídos do site do Instituto de Pesquisa Econômica Aplicada (Ipea). Após a extração, os dados foram salvos em um arquivo csv, e importados no python para tratamentos iniciais mostrados abaixo:')
 st. image ('Imagens/Phyton/Pyhton - importanto bibliotecas.png', caption='importando e instalando bibliotecas necessárias')
@@ -33,8 +42,10 @@ st. image ('Imagens/Phyton/Python - Forecast.png', caption='criação do forecas
 st. image ('Imagens/Phyton/Python - criando arquivo de previsão.png', caption='criando arquivo de previsão')
 st. image ('Imagens/Phyton/Python - acurácia dados previsão.png', caption='validando acurácia do modelo')
 
-st.markdown("<h3 style='color:#264CAC;'>Acontecimentos que influenciaram o preço do petróleo</h3>", unsafe_allow_html=True)
-st.markdown("<h3 style='color:#6C778A;'>Crise econômica de 2008:</h3>", unsafe_allow_html=True)
+elif pagina == "Principais Acontecimentos":
+    st.title("<h3 style='color:#264CAC;'>Principais Acontecimentos</h3>", unsafe_allow_html=True")
+
+        st.markdown("<h3 style='color:#6C778A;'>Crise econômica de 2008:</h3>", unsafe_allow_html=True)
 st.write('''A crise econômica de é também conhecida como a crise financeira global, foi uma das mais graves desde a Grande Depressão de 1929. Ela teve início nos Estados Unidos e rapidamente se espalhou para o resto do mundo, afetando bancos, mercados financeiros, empresas e, principalmente, a vida de milhões de pessoas.
 Nos anos que antecederam a crise, os preços dos imóveis nos Estados Unidos subiram muito. Essa "bolha imobiliária" foi alimentada por políticas de crédito fácil: os bancos ofereciam empréstimos com juros baixos e condições flexíveis, mesmo para pessoas com pouca capacidade de pagamento (os chamados "subprime"), com todas essas condições muitas pessoas compraram imóveis, levando a uma alta na demanda e, consequentemente, alta no preço das casas.
 Os bancos e instituições financeiras começaram a "empacotar" esses empréstimos de alto risco em títulos e vendê-los no mercado financeiro como investimentos seguros que prometiam retornos elevados e pareciam ser uma maneira segura de investir em imóveis, que tradicionalmente eram vistos como ativos seguros.
@@ -71,10 +82,14 @@ Em abril de 2020, o preço do petróleo alcançou um marco histórico com o petr
 st.image('Imagens/Phyton/Python - Impacto da pandemia.png', caption='Pandemia Covid19 2020 - 2021')
 
 
-st.markdown("<h3 style='color:#264CAC;'>Criação de Dashboard interativo</h3>", unsafe_allow_html=True)
+elif pagina == "Dashboard Interativo":
+    st.title("<h3 style='color:#264CAC;'>Dashboard Interativo</h3>", unsafe_allow_html=True")
+    st.write("Aqui está o seu dashboard interativo.")
 
-st.markdown("<h3 style='color:#264CAC;'>MVP</h3>", unsafe_allow_html=True)
-# Carregar os dados
+elif pagina == "MVP":
+    st.title(""<h3 style='color:#264CAC;'>MVP"</h3>", unsafe_allow_html=True)
+
+
 @st.cache
 def load_data():
     data_path = "Documentos/Dados  petroleo Forecasting .xlsx"  # Substitua com o nome correto ao fazer upload
@@ -127,11 +142,16 @@ st.download_button(
     mime="text/csv"
 )
 
-st.markdown("<h3 style='color:#264CAC;'>Conclusão</h3>", unsafe_allow_html=True)
+elif pagina == "Conclusão":
+    st.title("<h3 style='color:#264CAC;'>Conclusão</h3>")
+    st.write("Aqui você pode escrever as conclusões do seu trabalho de pesquisa e as lições aprendidas.")
+    # Resuma os resultados e o impacto do seu trabalho.
 
 
 
-st.markdown("<h3 style='color:#264CAC;'>Referências</h3>", unsafe_allow_html=True)
+elif pagina == "Referências":
+    st.title("<h3 style='color:#264CAC;'>Referências</h3>", unsafe_allow_html=True")
+    
 st.markdown("<h3 style='color:#6C778A;'>Crise financeira 2008</h3>", unsafe_allow_html=True)
 st.write('''https://www.investopedia.com/ask/answers/052715/how-did-financial-crisis-affect-oil-and-gas-sector.asp
 https://cepr.org/voxeu/columns/oil-prices-and-economic-recession-2007-08
