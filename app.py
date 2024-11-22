@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 st.markdown("<p style='font-size:40px; color:#B40C40;'>Tech Challenge 4 | Fiap</p>", unsafe_allow_html=True)
 
@@ -73,6 +74,58 @@ st.image('Imagens/Phyton/Python - Impacto da pandemia.png', caption='Pandemia Co
 st.markdown("<h3 style='color:#264CAC;'>Criação de Dashboard interativo</h3>", unsafe_allow_html=True)
 
 st.markdown("<h3 style='color:#264CAC;'>MVP</h3>", unsafe_allow_html=True)
+# Carregar os dados
+@st.cache
+def load_data():
+    data_path = "Documentos/Dados  petroleo Forecasting .xlsx"  # Substitua com o nome correto ao fazer upload
+    data = pd.read_excel(data_path)
+    data['data'] = pd.to_datetime(data['data'])
+    return data
+
+# Configuração inicial
+st.title("MVP: Previsão do Preço do Petróleo")
+st.write("Utilizando dados do modelo Prophet para análise e visualização interativa.")
+
+data = load_data()
+
+# Filtro por intervalo de datas
+st.sidebar.header("Filtro de Datas")
+start_date = st.sidebar.date_input("Data Inicial", data['data'].min())
+end_date = st.sidebar.date_input("Data Final", data['data'].max())
+
+filtered_data = data[(data['data'] >= pd.to_datetime(start_date)) & (data['data'] <= pd.to_datetime(end_date))]
+
+# Exibir dados filtrados
+st.write(f"Exibindo dados entre {start_date} e {end_date}")
+st.dataframe(filtered_data)
+
+# Visualização do Preço Realizado e Previsão
+st.header("Comparação: Preço Realizado vs. Previsão")
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.plot(filtered_data['data'], filtered_data['Fechamento realizado'], label="Fechamento Realizado", color="blue")
+ax.plot(filtered_data['data'], filtered_data['preco_previsto'], label="Preço Previsto", color="orange")
+ax.set_title("Preço do Petróleo: Realizado vs. Previsto")
+ax.set_xlabel("Data")
+ax.set_ylabel("Preço (US$)")
+ax.legend()
+st.pyplot(fig)
+
+# Insights resumidos
+st.header("Insights")
+st.write("1. A previsão segue a tendência geral dos preços realizados com desvios ocasionais.")
+st.write("2. As maiores diferenças entre previsão e valores reais ocorrem em períodos de maior volatilidade.")
+st.write("3. O modelo mostra boa performance em períodos de estabilidade.")
+st.write("4. Eventos econômicos ou geopolíticos específicos podem impactar a precisão.")
+
+# Download dos dados filtrados
+st.header("Exportar Dados Filtrados")
+csv = filtered_data.to_csv(index=False)
+st.download_button(
+    label="Baixar dados filtrados como CSV",
+    data=csv,
+    file_name="dados_filtrados_petroleo.csv",
+    mime="text/csv"
+)
 
 st.markdown("<h3 style='color:#264CAC;'>Conclusão</h3>", unsafe_allow_html=True)
 
