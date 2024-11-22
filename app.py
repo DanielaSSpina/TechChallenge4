@@ -97,7 +97,7 @@ elif pagina == "MVP":
         return data
 
     # Configuração inicial
-    st.title("MVP: Previsão do Preço do Petróleo")
+        st.markdown("<h3 style='color:#6C778A;'>Previsão do Preço do Petróleo</h3>", unsafe_allow_html=True)
     st.write("Utilizando dados do modelo Prophet para análise e visualização interativa.")
 
     data = load_data()
@@ -114,7 +114,7 @@ elif pagina == "MVP":
     st.dataframe(filtered_data)
 
     # Visualização do Preço Realizado e Previsão
-    st.header("Comparação: Preço Realizado vs. Previsão")
+    st.markdown("<h3 style='color:#6C778A;'>Comparação: Preço Realizado vs. Previsão</h3>", unsafe_allow_html=True)
     fig, ax = plt.subplots(figsize=(10, 6))
     ax.plot(filtered_data['data'], filtered_data['Fechamento realizado'], label="Fechamento Realizado", color="blue")
     ax.plot(filtered_data['data'], filtered_data['preco_previsto'], label="Preço Previsto", color="orange")
@@ -125,14 +125,14 @@ elif pagina == "MVP":
     st.pyplot(fig)
 
     # Insights resumidos
-    st.header("Insights")
+    st.markdown("<h3 style='color:#6C778A;'>Insights</h3>", unsafe_allow_html=True)
     st.write("1. A previsão segue a tendência geral dos preços realizados com desvios ocasionais.")
     st.write("2. As maiores diferenças entre previsão e valores reais ocorrem em períodos de maior volatilidade.")
     st.write("3. O modelo mostra boa performance em períodos de estabilidade.")
     st.write("4. Eventos econômicos ou geopolíticos específicos podem impactar a precisão.")
 
     # Download dos dados filtrados
-    st.header("Exportar Dados Filtrados")
+    st.markdown("<h3 style='color:#6C778A;'>Exportar Dados Filtrados</h3>", unsafe_allow_html=True)
     csv = filtered_data.to_csv(index=False)
     st.download_button(
         label="Baixar dados filtrados como CSV",
