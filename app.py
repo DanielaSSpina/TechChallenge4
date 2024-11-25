@@ -134,17 +134,50 @@ elif pagina == "MVP":
 elif pagina == "Referências":
     st. image ('Imagens/Banner/Referência GG.jpg')
     st.markdown("<h3 style='color:#264CAC;'>Referências</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:#6C778A;'>Crise financeira asiática 1997 - 1998</h3>", unsafe_allow_html=True)
+    st.write('''https://iwofr.org/crise-financeira-asi%C3%A1tica/
+    https://www.suno.com.br/artigos/crise-asiatica/''')
+
+    st.markdown("<h3 style='color:#6C778A;'>Ataque 11 de setembro de 2001 </h3>", unsafe_allow_html=True)
+    st.write('''https://einvestidor.estadao.com.br/mercado/11-de-setembro-mercado-financeiro/
+    https://clicrdc.com.br/gestao-e-negocios/11-de-setembro-o-dia-que-mudou-a-historia-e-a-economia-global/''')
+
+    st.markdown("<h3 style='color:#6C778A;'>Invasão ao Iraque - 2003</h3>", unsafe_allow_html=True)
+    st.write('''https://www.greelane.com/pt/humanidades/problemas/oil-drive-us-invasion-of-iraq-3968261/''')
+
+    st.markdown("<h3 style='color:#6C778A;'>Furacão Katrina - 2005</h3>", unsafe_allow_html=True)
+    st.write('''https://pt.facts.net/historia/eventos-historicos/36-fatos-sobre-furacao-katrina/''')
+
+    st.markdown("<h3 style='color:#6C778A;'>Primavera Árabe e Guerra Civil na Líbia - 2011</h3>", unsafe_allow_html=True)
+    st.write('''https://revistas.ufpr.br/conjgloblal/article/download/74925/43315
+    https://sites.ufpe.br/oci/2022/06/13/guerra-civil-na-libia-2011/''')
+
+    st.markdown("<h3 style='color:#6C778A;'>Tensões entre EUA e Irã - 2014</h3>", unsafe_allow_html=True)
+    st.write('''https://areferencia.com/oriente-medio/do-alinhamento-a-rivalidade-entenda-a-relacao-de-eua-e-ira-nos-ultimos-50-anos/
+    https://conteudos.xpi.com.br/acoes/relatorios/quais-os-impactos-da-tensao-entre-ira-e-estados-unidos/
+    https://www.terra.com.br/noticias/mundo/por-que-a-tensao-entre-eua-e-ira-no-estreito-de-ormuz-pode-fazer-disparar-o-preco-do-petroleo,3480d9d3c15dd3c6045aebbee253f0e87igg1e62.html''')
+  
     st.markdown("<h3 style='color:#6C778A;'>Crise financeira 2008</h3>", unsafe_allow_html=True)
     st.write('''https://www.investopedia.com/ask/answers/052715/how-did-financial-crisis-affect-oil-and-gas-sector.asp
     https://cepr.org/voxeu/columns/oil-prices-and-economic-recession-2007-08
     https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp''')
     
-    st.markdown("<h3 style='color:#6C778A;'>Informações OPEP</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:#6C778A;'>Informações OPEP 2017 - 2018</h3>", unsafe_allow_html=True)
     st.write('''https://www.ecb.europa.eu/pub/pdf/other/eb201608_focus01.en.pdf
     https://www.opec.org/opec_web/en/press_room/6748.htm
     https://oglobo.globo.com/economia/noticia/2023/11/30/o-que-e-a-opep-como-ela-funciona-e-o-que-o-brasil-tem-a-ganhar-caso-se-torne-um-membro.ghtml''')
     
-    st.markdown("<h3 style='color:#6C778A;'>Tensões geopolíticas do oriente médio</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:#6C778A;'>Tensões geopolíticas do oriente médio 2017 - 2018</h3>", unsafe_allow_html=True)
     st.write('''https://www.wilsoncenter.org/article/explainer-roots-and-realities-10-conflicts-middle-east
     https://www.iemed.org/publication/geopolitical-trends-shifts-challenges-and-fractures-of-the-post-arab-spring-2020-2021/
     https://www.brookings.edu/articles/the-middle-east-and-north-africa-over-the-next-decade-key-challenges-and-policy-options/''')
+
+    st.markdown("<h3 style='color:#6C778A;'>Conflito Rússia e Ucrânia 2022 - 2023</h3>", unsafe_allow_html=True)
+    st.write('''https://assets.kpmg.com/content/dam/kpmg/br/pdf/2022/9/conflito_russia_ucrania_impactos_sobre_o_preco_da_energia.pdf
+    https://veja.abril.com.br/economia/o-impacto-da-tensao-da-russia-e-da-ucrania-no-preco-dos-combustiveis/''')
+
+    st.markdown("<h3 style='color:#6C778A;'>Instabilidade regional e decisões da OPEP+ 2024</h3>", unsafe_allow_html=True)
+    st.write('''https://br.investing.com/news/commodities-news/o-que-esperar-do-petroleo-em-2024-especialista-traca-cenarios-1191005
+    https://clickpetroleoegas.com.br/petroleo-em-foco-tensoes-e-expectativas-nos-investimentos-para-2024/
+    https://exame.com/economia/opep-mantem-previsao-para-alta-na-demanda-global-por-petroleo-em-2023-e-2024/''')
+
