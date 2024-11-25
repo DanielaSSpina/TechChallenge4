@@ -69,9 +69,8 @@ Em abril de 2020, o preço do petróleo alcançou um marco histórico com o petr
     st.image('Imagens/Python/4. Python - visualização de impacto - pandemia.png', caption='Pandemia Covid19 2020 - 2021')
 
 elif pagina == "Dashboard Interativo":
-    st. image ('Imagens/Banner/Dashboard GG 2048x733.jpeg')
     power_bi_url = "https://app.powerbi.com/view?r=eyJrIjoiODljNzU2NjUtNTQzNS00ODhhLWIyYTgtMDY0NzczY2M1MDE0IiwidCI6IjExZGJiZmUyLTg5YjgtNDU0OS1iZTEwLWNlYzM2NGU1OTU1MSIsImMiOjR9"
-    iframe_code = f'<iframe width="100%" height="600px" src="{power_bi_url}" frameborder="0" allowFullScreen="true"></iframe>'
+    iframe_code = f'<iframe width="80%" height="700px" src="{power_bi_url}" frameborder="0" allowFullScreen="true"></iframe>'
 
     st.components.v1.html(iframe_code, height=600)
 
