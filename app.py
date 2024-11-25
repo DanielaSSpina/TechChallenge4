@@ -134,6 +134,7 @@ elif pagina == "MVP":
 elif pagina == "Referências":
     st. image ('Imagens/Banner/Referência GG.jpg')
     st.markdown("<h3 style='color:#264CAC;'>Referências</h3>", unsafe_allow_html=True)
+   
     st.markdown("<h3 style='color:#6C778A;'>Crise financeira asiática 1997 - 1998</h3>", unsafe_allow_html=True)
     st.write('''https://iwofr.org/crise-financeira-asi%C3%A1tica/
     https://www.suno.com.br/artigos/crise-asiatica/''')
