@@ -10,7 +10,7 @@ st.markdown("<p style='font-size:40px; color:#B40C40;'>Tech Challenge 4 | Fiap</
 
 # Criando um menu de navegação com `selectbox` ou `radio`
 pagina = st.sidebar.radio("Escolha a Página", ["Introdução", "Metodologia", "Principais Acontecimentos", 
-                                               "Dashboard Interativo", "MVP", "Conclusão", "Referências"])
+                                               "Dashboard Interativo", "MVP", "Referências"])
 
 # Conteúdo de cada página
 if pagina == "Introdução":
@@ -130,11 +130,6 @@ elif pagina == "MVP":
         file_name="dados_filtrados_petroleo.csv",
         mime="text/csv"
     )
-
-elif pagina == "Conclusão":
-    st. image ('Imagens/Banner/Conclusão GG.jpg')
-    st.markdown("<h3 style='color:#264CAC;'>Conclusão</h3>", unsafe_allow_html=True)
-    st.write("Aqui você pode escrever as conclusões do seu trabalho de pesquisa e as lições aprendidas.")
 
 elif pagina == "Referências":
     st. image ('Imagens/Banner/Referência GG.jpg')
