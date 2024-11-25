@@ -70,8 +70,10 @@ Em abril de 2020, o preço do petróleo alcançou um marco histórico com o petr
 
 elif pagina == "Dashboard Interativo":
     st. image ('Imagens/Banner/Dashboard GG 2048x733.jpeg')
-    st.markdown("<h3 style='color:#264CAC;'>Dashboard Interativo</h3>", unsafe_allow_html=True)
-    st.write("Aqui está o seu dashboard interativo.")
+    st.markdown("<h3 style='color:#264CAC;'>Dashboard Interativo</h3>", unsafe_allow_html=True)power_bi_url = "https://app.powerbi.com/view?r=eyJrIjoiODljNzU2NjUtNTQzNS00ODhhLWIyYTgtMDY0NzczY2M1MDE0IiwidCI6IjExZGJiZmUyLTg5YjgtNDU0OS1iZTEwLWNlYzM2NGU1OTU1MSIsImMiOjR9"
+    st.markdown(f"<div style='display: flex; justify-content: center;'><iframe src='{power_bi_url}' width='800' height='800' frameborder='0' allowFullScreen='true'></iframe></div>",
+    unsafe_allow_html=True
+)
 
 elif pagina == "MVP":
     st. image ('Imagens/Banner/MVP GG 2048x733.jpeg')
