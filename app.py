@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 
 # Configuração do título do aplicativo
 st.set_page_config(page_title="Projeto de Previsão de Preço de Petróleo", page_icon="📊", layout="wide")
@@ -78,58 +79,61 @@ elif pagina == "MVP":
     st. image ('Imagens/Banner/MVP GG 2048x733.jpeg')
     st.markdown("<h3 style='color:#264CAC;'>MVP</h3>", unsafe_allow_html=True)
 
-    # Corrigindo a indentação do decorador e da função
-    @st.cache
-    def load_data():
-        data_path = "Documentos/Dados  petroleo Forecasting .xlsx"  # Substitua com o nome correto ao fazer upload
-        data = pd.read_excel(data_path)
-        data['data'] = pd.to_datetime(data['data'])
-        return data
+    # Carregar os dados limpos
+data = pd.read_csv("Arquivos_Apoio/cleaned_data.csv")
 
-    # Configuração inicial
-        st.markdown("<h3 style='color:#6C778A;'>Previsão do Preço do Petróleo</h3>", unsafe_allow_html=True)
-    st.write("Utilizando dados do modelo Prophet para análise e visualização interativa.")
+# Criar o gráfico de importância
+with st.container():
+    fig = go.Figure()
 
-    data = load_data()
+    # Ordenar por importância (exemplo: IPV como proxy)
+    data_sorted = data.mean().sort_values(ascending=False)
 
-    # Filtro por intervalo de datas
-    st.sidebar.header("Filtro de Datas")
-    start_date = st.sidebar.date_input("Data Inicial", data['data'].min())
-    end_date = st.sidebar.date_input("Data Final", data['data'].max())
-
-    filtered_data = data[(data['data'] >= pd.to_datetime(start_date)) & (data['data'] <= pd.to_datetime(end_date))]
-
-    # Exibir dados filtrados
-    st.write(f"Exibindo dados entre {start_date} e {end_date}")
-    st.dataframe(filtered_data)
-
-    # Visualização do Preço Realizado e Previsão
-    st.markdown("<h3 style='color:#6C778A;'>Comparação: Preço Realizado vs. Previsão</h3>", unsafe_allow_html=True)
-    fig, ax = plt.subplots(figsize=(10, 6))
-    ax.plot(filtered_data['data'], filtered_data['Fechamento realizado'], label="Fechamento Realizado", color="blue")
-    ax.plot(filtered_data['data'], filtered_data['preco_previsto'], label="Preço Previsto", color="orange")
-    ax.set_title("Preço do Petróleo: Realizado vs. Previsto")
-    ax.set_xlabel("Data")
-    ax.set_ylabel("Preço (US$)")
-    ax.legend()
-    st.pyplot(fig)
-
-    # Insights resumidos
-    st.markdown("<h3 style='color:#6C778A;'>Insights</h3>", unsafe_allow_html=True)
-    st.write("1. A previsão segue a tendência geral dos preços realizados com desvios ocasionais.")
-    st.write("2. As maiores diferenças entre previsão e valores reais ocorrem em períodos de maior volatilidade.")
-    st.write("3. O modelo mostra boa performance em períodos de estabilidade.")
-    st.write("4. Eventos econômicos ou geopolíticos específicos podem impactar a precisão.")
-
-    # Download dos dados filtrados
-    st.markdown("<h3 style='color:#6C778A;'>Exportar Dados Filtrados</h3>", unsafe_allow_html=True)
-    csv = filtered_data.to_csv(index=False)
-    st.download_button(
-        label="Baixar dados filtrados como CSV",
-        data=csv,
-        file_name="dados_filtrados_petroleo.csv",
-        mime="text/csv"
+    fig.add_trace(
+        go.Bar(
+            x=data_sorted.values,
+            y=data_sorted.index,
+            orientation='h',
+            marker=dict(color='#90ee90'),  # Verde claro
+            name="Feature Importance",
+        )
     )
+
+    fig.update_layout(
+        title="Feature Importance in Random Forest Model",
+        xaxis_title="Importance",
+        yaxis_title="Feature",
+        yaxis=dict(autorange="reversed"),
+        height=600,
+    )
+
+    # Mostrar o gráfico no Streamlit
+    st.plotly_chart(fig)
+
+# Inputs de indicadores
+with st.container():
+    col0, col1, col2, col3, col4 = st.columns(5)
+    indicator_ian = col0.number_input("IAN", min_value=0.0, max_value=10.0, step=0.1)
+    indicator_ipv = col1.number_input("IPV", min_value=0.0, max_value=10.0, step=0.1)
+    indicator_iaa = col2.number_input("IAA", min_value=0.0, max_value=10.0, step=0.1)
+    indicator_ips = col3.number_input("IPS", min_value=0.0, max_value=10.0, step=0.1)
+    indicator_ipp = col4.number_input("IPP", min_value=0.0, max_value=10.0, step=0.1)
+
+# Criar dataframe de entrada para o modelo
+student_data = pd.DataFrame({
+    'IAA': [indicator_iaa],
+    'IPS': [indicator_ips],
+    'IPP': [indicator_ipp],
+    'IPV': [indicator_ipv],
+    'IAN': [indicator_ian],
+})
+
+# Botão de previsão
+if st.button("⚡️ Predict"):
+    st.dataframe(student_data)
+    # Aqui você adicionaria o scaler e o modelo para realizar a previsão
+    # Exemplo fictício:
+    st.success("Previsão realizada com sucesso!")
 
 elif pagina == "Referências":
     st. image ('Imagens/Banner/Referência GG.jpg')
