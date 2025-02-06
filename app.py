@@ -79,10 +79,8 @@ elif pagina == "MVP":
     st. image ('Imagens/Banner/MVP GG 2048x733.jpeg')
     st.markdown("<h3 style='color:#264CAC;'>MVP</h3>", unsafe_allow_html=True)
 
-    # Carregar os dados limpos
 data = pd.read_csv("Arquivos_Apoio/cleaned_data.csv")
 
-# Criar o gráfico de importância
 with st.container():
     fig = go.Figure()
 
